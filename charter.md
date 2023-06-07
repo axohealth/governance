@@ -1,8 +1,8 @@
-# Project Proposal: AxoHealth DAO Digital Twin Network
+# Proposed AxoHealth DAO Charter
 
 ## Executive Summary
 
-The AxoHealth DAO aims to create a global realtime health early warning and optimisation system by utilizing the power of
+AxoHealth DAO aims to create a global realtime health early warning and optimization system by utilizing the power of
 Web3 technologies to create a decentralized autonomous organization. Our model is based on a digital twin platform for
 health data analysis and early disease detection. Contributing entities, which could be individuals or hospitals, are
 incentivized to contribute anonymized health data, enhancing the accuracy of our global early warning system. The base
@@ -39,14 +39,14 @@ providers, systems integrators, and health researchers.
 
 ### Patrons
 
-Patrons are entities or individuals that support the DAO through cash contributions or \"donations in kind\" of
-services. This is what gives real-world value to the axtoken. Examples might include the World Health Organization (
-WHO), the United Nations (UN), philanthropists, and deceased estates.
+Patrons are entities or individuals that support the DAO through cash contributions or "donations in kind" of services.
+This is what gives real-world value to the axtoken. Examples might include the World Health Organization (WHO), the
+United Nations (UN), philanthropists, and deceased estates.
 
 ### Envoys
 
 Envoys may be local, regional, or country-level entities that have responsibility for a jurisdiction. They receive a
-subset of summary-level information for their jurisdiction. While they are unable to prevent information sharing, they
+subset of summary-level information for their jurisdiction. While they are unable to prevent anonymized information sharing, they
 receive real-time information. They may also enable tokens that may be distributed in a restricted area.
 
 ## Benefits
@@ -64,9 +64,42 @@ This model offers several benefits:
 5. **Perpetual Software Access**: Even if contributors decide to stop data submissions, they retain access to the
    software, ensuring ongoing value.
 
+## Governance Structure
+
+*Placeholder for a section describing the governance structure of the AxoHealth DAO, including decision-making
+processes, voting rights, and roles within the organization.*
+
+## Tokenomics
+
+*Placeholder for a section describing the tokenomics of the AxoHealth DAO, including token distribution, token utility,
+and token value.*
+
+## Legal and Regulatory Compliance
+
+*Placeholder for a section discussing legal and regulatory compliance, including any necessary registrations, licenses,
+and adherence to applicable laws and regulations.*
+
+## Risk Management
+
+*Placeholder for a section outlining the risks associated with the AxoHealth DAO, including financial, operational, and
+reputational risks, and the strategies in place to mitigate these risks.*
+
+## Code of Conduct
+
+*Placeholder for a section defining the code of conduct for all participants in the AxoHealth DAO, including ethical
+guidelines and expectations for behavior.*
+
+## Dispute Resolution
+
+*Placeholder for a section outlining the dispute resolution process within the AxoHealth DAO, including how conflicts
+will be addressed and resolved among members.*
+
+## Amendments and Updates
+
+*Placeholder for a section describing the process for amending or updating the AxoHealth DAO Charter, including voting
+requirements and any necessary approvals.*
+
 ## Conclusion
 
 We believe that AxoHealth DAO holds great potential in advancing global health monitoring and disease prevention. We
 welcome contributions and look forward to building a healthier world together.
-
-
