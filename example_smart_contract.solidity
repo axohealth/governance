@@ -1,0 +1,74 @@
+// (C) Axomem 2023
+// AxoHealth DAO Smart Contract example
+
+// Here's a simplified example of how a smart contract for the AxoHealth DAO might look, written in Solidity,
+// the most popular language for Ethereum smart contracts. This contract includes basic functionality for
+// minting and transferring tokens, as well as for voting on proposals.
+// This contract includes two main parts:
+
+// The Axken contract, which is a simple ERC20 token with an additional mint function that allows the
+// contract owner to create new tokens.
+
+// The AxoHealthDAO contract, which represents the DAO itself. It includes functions for adding contributors
+// and enablers, creating proposals, voting on proposals, and executing proposals.
+
+// Please note that this is a very basic example and doesn't include many features that a real DAO would need
+
+pragma solidity ^0.8.0;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+
+contract Axken is ERC20, Ownable {
+    constructor() ERC20("Axken", "AXK") {}
+
+    function mint(address to, uint256 amount) public onlyOwner {
+        _mint(to, amount);
+    }
+}
+
+contract AxoHealthDAO {
+    struct Proposal {
+        string description;
+        uint256 voteCount;
+        bool active;
+    }
+
+    Axken public axken;
+    mapping(address => bool) public contributors;
+    mapping(address => bool) public enablers;
+    Proposal[] public proposals;
+
+    constructor(Axken _axken) {
+        axken = _axken;
+    }
+
+    function addContributor(address contributor) public {
+        contributors[contributor] = true;
+    }
+
+    function addEnabler(address enabler) public {
+        enablers[enabler] = true;
+    }
+
+    function createProposal(string memory description) public {
+        require(contributors[msg.sender], "Only contributors can create proposals");
+        proposals.push(Proposal({
+            description: description,
+            voteCount: 0,
+            active: true
+        }));
+    }
+
+    function vote(uint256 proposalIndex) public {
+        require(contributors[msg.sender], "Only contributors can vote");
+        require(proposals[proposalIndex].active, "Proposal is not active");
+        proposals[proposalIndex].voteCount++;
+    }
+
+    function executeProposal(uint256 proposalIndex) public {
+        require(proposals[proposalIndex].voteCount > (address(this).balance / 2), "Not enough votes");
+        // Execute proposal
+        proposals[proposalIndex].active = false;
+    }
+}
